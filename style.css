@@ -1,0 +1,92 @@
+/*
+Theme Name:   	Storefront Child Theme
+Theme URI:    	https://github.com/stuartduff/storefront-child-theme
+Author:       	Stuart Duff
+Author URI:     http://stuartduff.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.hfeed{
+    background-image: linear-gradient( to bottom right,#6f94b367,#6f94b36e);
+    color: #0F4C81; 
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+.site-header{
+    background-color: #0F4C81;
+    font-weight: bold;
+    padding-top:3px;
+    font-family: 'Ubuntu';
+}
+.site-footer{
+    background-color: #0F4C81;
+    border-top: 1px solid white;
+    font-family: 'Ubuntu';
+}
+.col-full , .col-full a, p {
+    color: #ffffff !important;
+}
+.storefront-breadcrumb .col-full ,.storefront-breadcrumb .col-full .woocommerce-breadcrumb a ,.woocommerce-result-count,.content-area,.site-content{
+    color: #0F4C81 !important;
+}
+a:link , a:visited , .page-title ,.woocommerce-loop-product__title,.onsale , h1{
+    color: #0F4C81 ;
+}
+.price{
+    color: #0F4C81 !important;
+    font-weight: 300;
+}
+.woocommerce-loop-product__title{
+    font-size: 26px !important;
+}
+.nav-menu a:hover{
+    text-decoration: #ffffff 3px underline;
+}
+.onsale{
+    border-color: #0F4C81 !important;
+}
+.widget_shopping_cart_content{
+    background-color: #0F4C81;
+}
+.storefront-product-pagination__title ,.storefront-sticky-add-to-cart__content{
+    color: #0F4C81;
+}
+.button , select , button{
+  background-color: #0F4C81 !important;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white !important;
+  transition: color 100ms;
+}
+
+.button:hover,
+.button:focus{
+  background-color: white !important;
+  color: #0F4C81 !important;
+  box-shadow: 5px 5px 5px #082641;
+} 
+img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #265681;
+}
+.woocommerce-info{
+    background-color: #0F4C81;
+    color: white;
+}
