@@ -23,11 +23,14 @@ Images License: GNU General Public License v2 or later
  * Add your own custom css below this text.
  */
  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-.hfeed{
+.side-main{
     background-image: linear-gradient( to bottom right,#6f94b367,#6f94b36e);
     color: #0F4C81; 
     font-weight: bold;
     font-family: 'Ubuntu';
+}
+.content-area a:link{
+	color: #0F4C81 !important; 
 }
 .site-header{
     background-color: #0F4C81;
@@ -40,8 +43,8 @@ Images License: GNU General Public License v2 or later
     border-top: 1px solid white;
     font-family: 'Ubuntu';
 }
-.col-full , .col-full a, p {
-    color: #ffffff !important;
+ .col-full a, p {
+    color: #ffffff ;
 }
 .storefront-breadcrumb .col-full ,.storefront-breadcrumb .col-full .woocommerce-breadcrumb a ,.woocommerce-result-count,.content-area,.site-content{
     color: #0F4C81 !important;
@@ -72,7 +75,7 @@ a:link , a:visited , .page-title ,.woocommerce-loop-product__title,.onsale , h1{
   background-color: #0F4C81 !important;
   border-radius: 8px;
   box-sizing: border-box;
-  color: white !important;
+  color: white ;
   transition: color 100ms;
 }
 
