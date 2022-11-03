@@ -97,7 +97,7 @@ span.onsale{
     50%{opacity: 0%;} 
     100%{opacity: 100%;}
  } */
-
+ 
 @keyframes onsale {
     50%{background-color: #0F4C81;}
     50%{color: #ffffff;}
@@ -141,4 +141,7 @@ img{
 .woocommerce-info{
     background-color: #0F4C81;
     color: white;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 2px solid #265681 !important;
 }
