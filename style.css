@@ -129,12 +129,15 @@ li.product span.onsale ,.product span.onsale , .wc-block-grid__product-onsale , 
 .site-branding, .site-search, .site-header-cart, .site-logo-anchor, .site-logo-link, .custom-logo-link { 
     margin-bottom: 0px;
 }
-.button  ,.submit, button , .added_to_cart ,.page-numbers .page-numbers,.hentry .entry-content .wp-block-button .wp-block-button__link {
+.button  ,.submit, button , .woocommerce-info a.button, .added_to_cart ,.page-numbers .page-numbers,.hentry .entry-content .wp-block-button .wp-block-button__link {
   background-color: #0F4C81 !important;
   border-radius: 8px;
   box-sizing: border-box;
   color: white !important;
   transition: color 100ms;
+}
+.woocommerce-info a.button{
+    padding: 0px 15px 0 10px;
 }
 .input-text{
     border-radius: 8px;
@@ -155,7 +158,7 @@ select , .select2-container .select2-selection--single .select2-selection__rende
 .hentry .entry-content a {
     text-decoration: none;
 }
-.button:hover , .button:focus , .submit:hover , .submit:focus , .added_to_cart:hover, .added_to_cart:focus,.page-numbers .current,.page-numbers .page-numbers:hover,.page-numbers .page-numbers:focus,.hentry .entry-content .wp-block-button .wp-block-button__link:hover,.hentry .entry-content .wp-block-button .wp-block-button__link:focus {
+.button:hover , .button:focus ,.woocommerce-info a.button:hover, .submit:hover , .submit:focus , .added_to_cart:hover, .added_to_cart:focus,.page-numbers .current,.page-numbers .page-numbers:hover,.page-numbers .page-numbers:focus,.hentry .entry-content .wp-block-button .wp-block-button__link:hover,.hentry .entry-content .wp-block-button .wp-block-button__link:focus {
   background-color:#cee7fd !important;
   color: #002c52 !important;
   box-shadow: 3px 3px 5px #085394;
