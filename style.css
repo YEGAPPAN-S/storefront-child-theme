@@ -237,7 +237,7 @@ img:hover{
 }
 .woocommerce-MyAccount-navigation .is-active{
     background-color: #b4bef4;
-    padding: 0 3px 0 3px;
+    padding: 0 5px 0 5px;
 }
 table:not( .has-background ) tbody td , tfoot td{ /* table body*/
     background-color: #CDD3F8;
