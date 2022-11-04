@@ -29,10 +29,9 @@ Images License: GNU General Public License v2 or later
     background-color: #0F4C81;
     font-weight: bold;
     padding-top:8px;
-    font-family: 'Ubuntu', serif;
-} 
-.home.page:not(.page-template-template-homepage) .site-header{
-    margin-bottom: 0px;
+    font-family: 'Ubuntu', serif; 
+    margin-bottom: 0px !important; 
+    border-bottom-color:#7a7a79;
 }
 .storefront-breadcrumb{
     background-color: #6f94b367;
@@ -43,42 +42,37 @@ Images License: GNU General Public License v2 or later
 }
 .site-content {
     background-image: linear-gradient( to bottom right,#6f94b367,#6f94b36e);
-    color: #0F4C81;
     font-weight: bold;
     font-family: 'Ubuntu', serif;
 }
 .storefront-full-width-content .woocommerce-products-header {
     padding: 10px;
 }
-.entry-header a:link , .woocommerce-breadcrumb{
+.entry-header a:link , .woocommerce-breadcrumb , .woocommerce-result-count,.content-area,.site-content , .price , .wc-block-grid__product-title , .woocommerce-Price-amount .amount{
 	color: #0F4C81 !important; 
 }
 .site-footer{
     background-color: #0F4C81;
-    border-top: 1px solid white;
+    border-top: 1px solid #7a7a79;
     font-family: 'Ubuntu', serif;
 }
-.woocommerce-result-count,.content-area,.site-content{
-    color: #0F4C81 !important;
-}
-a:link , a:visited , .page-title ,.woocommerce-loop-product__title,.onsale , h1 , h2 ,h3{
+a:link , a:visited , .page-title ,.site-content ,.woocommerce-loop-product__title,.onsale , h1 , h2 ,h3 , .storefront-product-pagination__title ,.storefront-sticky-add-to-cart__content{
     color: #0F4C81 ;
 }
 .price , .wc-block-grid__product-title , .woocommerce-Price-amount .amount{
-    color: #0F4C81 !important;
     font-weight: 1000;
     font-size: large;
 }
 .woocommerce-loop-product__title{
     font-size: 26px !important;
 }
-.nav-menu a:hover{
+.nav-menu a:hover , .site-search a i:hover {
     text-shadow: white 0px 0px 15px;
 }
 bdi {
     font-weight: bold;
 }
-span.onsale , .wc-block-grid__product-onsale , .related .products span.onsale{
+li.product span.onsale ,.product span.onsale , .wc-block-grid__product-onsale , .related .products span.onsale{
     border-color: #0F4C81 !important;
     border-radius:50%;
     padding:20px 2px 10px 2px;
@@ -92,13 +86,17 @@ span.onsale , .wc-block-grid__product-onsale , .related .products span.onsale{
     height: 70px;
     animation: 2s linear 0s infinite running onsale;
 }
-.related .products span.onsale{
-    top: -20px;
+.related .products span.onsale , .wc-block-grid__product-onsale{
     left: -0px;
 }
 .wc-block-grid__product-onsale{
     top: -10px;
-    left: 0px;
+}
+.product span.onsale {
+    padding:20px 11px 20px 13px;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 /* 
@@ -115,15 +113,18 @@ span.onsale , .wc-block-grid__product-onsale , .related .products span.onsale{
 .widget_shopping_cart_content{
     background-color: #0F4C81;
 }
-.storefront-product-pagination__title ,.storefront-sticky-add-to-cart__content{
-    color: #0F4C81;
-}
 .search-field{
     border-radius: 30px;
     box-sizing: border-box;
 }
 .site-search{
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.site-search a i{
+    font-size: 25px;
 }
 .site-branding, .site-search, .site-header-cart, .site-logo-anchor, .site-logo-link, .custom-logo-link { 
     margin-bottom: 0px;
@@ -154,22 +155,12 @@ select , .select2-container .select2-selection--single .select2-selection__rende
 .hentry .entry-content a {
     text-decoration: none;
 }
-.button:hover,
-.button:focus,
-.submit:hover,
-.submit:focus,
-.added_to_cart:hover, /* wc-forward */
-.added_to_cart:focus,
-.page-numbers .current,
-.page-numbers .page-numbers:hover,
-.page-numbers .page-numbers:focus,
-.hentry .entry-content .wp-block-button .wp-block-button__link:hover,
-.hentry .entry-content .wp-block-button .wp-block-button__link:focus {
+.button:hover , .button:focus , .submit:hover , .submit:focus , .added_to_cart:hover, .added_to_cart:focus,.page-numbers .current,.page-numbers .page-numbers:hover,.page-numbers .page-numbers:focus,.hentry .entry-content .wp-block-button .wp-block-button__link:hover,.hentry .entry-content .wp-block-button .wp-block-button__link:focus {
   background-color:#cee7fd !important;
   color: #002c52 !important;
   box-shadow: 3px 3px 5px #085394;
 } 
-img{
+img , .woocommerce-product-gallery__image{
     border-radius: 15px;
     box-shadow: 3px 3px 5px #265681;
 }
@@ -244,37 +235,11 @@ img:hover{
 .fa{
     font-weight: 100;
 }
-/* }
-.site-content {
-    padding: 0 0 0 0;
-}
-.site-branding , .site-search{
-    position: fixed;
-    background-color: #0F4C81;
-    font-weight: bold;
-}
-.site-search{
-   right: 10px;
-   margin: -2px 0 0 0;
-}
-.site-branding {
-    left: 0;
-   margin: -10px 0 0 0;
-}
-.woocommerce-active .site-header .site-branding {
-    width: 100%;
-}
-.cart-contents{
-    right: 180px;
-} 
-.site-info a{
-    display: none;
-} */
 .woocommerce-MyAccount-navigation .is-active{
     background-color: #b4bef4;
     padding: 0 3px 0 3px;
 }
-table:not( .has-background ) tbody td , tfoot td{/* table body*/
+table:not( .has-background ) tbody td , tfoot td{ /* table body*/
     background-color: #CDD3F8;
  }
 table:not( .has-background ) th { /*Head */
@@ -283,12 +248,12 @@ table:not( .has-background ) th { /*Head */
 table:not( .has-background ) th td { /*Head */
     background-color: #CDD3F8 ;
 }
-table:not( .has-background ) tbody tr:nth-child(even) td , tfoot tr:nth-child(even) td {/* table even*/
+table:not( .has-background ) tbody tr:nth-child(even) td , tfoot tr:nth-child(even) td { /* table even*/
     background-color: #CDD3F8;
 }
 table.cart td.actions { /* Last bottom */
     border:3px solid  #b4bef4;
-    padding: 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
     background-color: #b4bef4;
 }
 input[type=text], input[type=number], input[type=email], input[type=tel], input[type=url], input[type=password], input[type=search], textarea, .input-text {
@@ -355,5 +320,13 @@ input[type=radio]+label {
     border: 2px solid ;
 }
 .showcoupon{
-    color: #fff;
+    color: #fff !important;
+}
+.current_page_item {
+    text-decoration: 3px underline ;
+    text-underline-position: under;
+}
+.input-radio:checked+label{
+    font-weight: bolder;
+   
 }

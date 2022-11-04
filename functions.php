@@ -26,3 +26,14 @@ function sf_child_theme_dequeue_style() {
 add_filter( 'storefront_credit_links_output', function () { 
     return '';
 });
+
+function storefront_product_search() {
+    if ( storefront_is_woocommerce_activated() ) {
+        ?>
+        <div class="site-search">
+            <a href="<?php echo wc_get_page_permalink( 'myaccount' ) ?>"><i class="fa fa-user fa-3"></i></a>
+            <?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+        </div>
+        <?php
+    }
+}
