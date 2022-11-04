@@ -117,11 +117,13 @@ li.product span.onsale ,.product span.onsale , .wc-block-grid__product-onsale , 
     border-radius: 30px;
     box-sizing: border-box;
 }
+@media (min-width: 768px){
 .site-search{
     margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 20px;
+}
 }
 .site-search a i{
     font-size: 25px;
